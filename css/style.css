@@ -1,3 +1,12 @@
 body{
+    .row{
+        margin-top: 10px;
+    }
+    .col{
+        display: inline-block;
+    }
     
+    .cot-1{
+        width: 100px;
+    }
 }

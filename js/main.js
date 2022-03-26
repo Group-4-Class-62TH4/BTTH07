@@ -65,4 +65,42 @@ $(document).ready(function(){
         }
         return false
     }
+    //check sex
+    $("#btnRegister").click(function(e){
+        e.preventDefault();
+        let isRadioChecked1 = $('#Sex-1').is(':checked');
+        let isRadioChecked2 = $('#Sex-2').is(':checked');
+        if(isRadioChecked1 || isRadioChecked2){
+            $("#statusOfSex").text('Checkbox is checked')
+            $("#statusOfSex").css('color','blue')
+        }else{
+            $("#statusOfSex").text('Checkbox is unchecked')
+            $("#statusOfSex").css('color','red')
+        }
+    })
+    //check language and function check 1 in 2
+    $(function() {
+        $("input:checkbox").on('click', function() {
+          var $box = $(this);
+          if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+          } else {
+            $box.prop("checked", false);
+          }
+        });
+      });
+    $("#btnRegister").click(function(e){
+        e.preventDefault();
+        let isChecked1 = $('#Language-1').is(':checked');
+        let isChecked2 = $('#Language-2').is(':checked');
+        if(isChecked1 || isChecked2){
+            $("#statusOfLanguage").text('Checkbox is checked')
+            $("#statusOfLanguage").css('color','blue')
+        }else{
+            $("#statusOfLanguage").text('Checkbox is unchecked')
+            $("#statusOfLanguage").css('color','red')
+        }
+    })
 })
