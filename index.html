@@ -4,12 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTTH07</title>
     <link rel="stylesheet" href="./css/style.css">
+    <title>Form Registration</title>
 </head>
 <body>
-    
+<h1>Registration Form</h1>
+    <form action="">
+        <div class="row">
+            <div class="cot-1 cot-1 col">
+                User ID:
+            </div>
+            <div class="cot-2 col">
+                <input type="text" name="txtUserID" id="txtUserID" required>
+                <span id="statusOfUserID"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Password:
+            </div>
+            <div class="cot-2 col">
+                <input type="password" name="txtPassword" id="txtPassword">
+                <span id="statusOfPassword"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                User Name:
+            </div>
+            <div class="cot-2 col">
+                <input type="text" name="txtUserName" id="txtUserName" required>
+                <span id="statusOfUserName"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Address:
+            </div>
+            <div class="cot-2 col">
+                <input type="text" name="txtAdd" id="txtAdd" required>
+                <span id="statusOfAdd"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Country:
+            </div>
+            <div class="cot-2 col">
+                <select name="selectCountry" id="selectCountry" required>
+                    <option hidden value="">(Please select a country)</option>
+                    <option>VietNam</option>
+                    <option>Korea</option>
+                    <option>China</option>
+                </select>
 
+                <span id="statusOfCountry"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Zip Code:
+            </div>
+            <div class="cot-2 col">
+                <input type="text" name="txtZip" id="txtZip" required>
+                <span id="statusOfZip"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Email:
+            </div>
+            <div class="cot-2 col">
+                <input type="text" name="txtEmail" id="txtEmail" required>
+                <span id="statusOfEmail"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Sex:
+            </div>
+            <div class="cot-2 col">
+                <input type="radio" name="Sex" id="Sex-1" required>Male
+                <input type="radio" name="Sex" id="Sex-2" required>Female
+                <span id="statusOfSex"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                Language:
+            </div>
+            <div class="cot-2 col">
+                <input type="checkbox" name="Language" id="Language-1" required checked>English
+                <input type="checkbox" name="Language" id="Language-2" required>Non English
+                <span id="statusOfLanguage"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                About:
+            </div>
+            <div class="cot-2 col">
+                <input type="text" name="txtAbout" id="txtAbout" required>
+                <span id="statusOfAbout"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cot-1 col">
+                <input type="submit" name="btnRegister" id="btnRegister" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
